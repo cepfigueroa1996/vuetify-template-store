@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <v-col 
+        md="9"
+    >
         <v-col 
             md="12"
         >
@@ -73,16 +75,17 @@
             </v-row>
         </v-card>    
         <add :snackbar="snackbar"></add>
-    </div>
+        <Load :load="loading" /> 
+    </v-col>
 </template>
 
 <script>
     import  Add from '@/views/notifications/Add'
-
+    import Load from '@/views/notifications/Load' //Vista durante el proceso de renderizado de la tienda
 
     export default {
-        props:['datos', 'search'],
-        components:{ Add },
+        props:['datos', 'search', 'loading'],
+        components:{ Add, Load },
         data(){
             return{
                 snackbar:false,

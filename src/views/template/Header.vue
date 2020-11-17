@@ -46,15 +46,14 @@
                 prominent
                 class="grey darken-4 white--text font-weight-thin"
                 >
-                <v-icon class="white--text">mdi-cart</v-icon>
-                Agrega todo lo que quieras  al carrito de compras, puedes ver nuestros productos
-                <v-chip
-                    class="ma-2"
-                    color="red"
-                    text-color="white"
-                >
-                    Aqui
-                </v-chip>
+                    <v-icon class="white--text">mdi-cart</v-icon>
+                    Agrega todo lo que quieras  al carrito de compras, puedes ver nuestros productos
+                    <v-btn
+                        color="error"
+                        to="/shop"
+                    >
+                        Aqui
+                    </v-btn>
                 </v-alert>
             </v-col>
         </v-row>

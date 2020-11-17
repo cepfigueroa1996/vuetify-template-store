@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     add:[],
     count:0,
+    search:'',
   },
   mutations: {
     cart(state, n){
