@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     add:[],
+    view:0,
     count:0,
     search:'',
   },
